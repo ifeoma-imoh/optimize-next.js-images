@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function Unoptimized() {
+export default function QualityOptimization() {
   return (
     <>
       <Image
@@ -7,10 +7,11 @@ export default function Unoptimized() {
           "https://res.cloudinary.com/ifeomaimoh/image/upload/v1651694150/sea_huykbx.jpg"
         }
         alt={"sample file"}
-        unoptimized={true}
         height={500}
         width={800}
-        layout='intrinsic'
+        layout={"responsive"}
+        sizes={"100vw"}
+        quality={50}
       />
     </>
   );
